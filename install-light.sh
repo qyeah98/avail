@@ -16,20 +16,6 @@ sleep 2
 
 echo "=================================================="
 
-echo -e "\e[1m\e[32m1. Input Node Name \e[0m" && sleep 1
-
-while :
-do
-  read -p "INPUT Node Name: " NODENAME
-  if [ -n "$NODENAME" ]; then
-    break
-  fi
-done
-
-echo -e "\e[1m\e[39m    OK ! Node Name is $NODENAME \n \e[0m"
-
-echo "=================================================="
-
 echo -e "\e[1m\e[32m1. Install dependency \e[0m" && sleep 1
 
 sudo apt update && sudo apt upgrade -y
