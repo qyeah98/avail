@@ -84,6 +84,8 @@ echo "=================================================="
 
 echo -e "\e[1m\e[32m6. Logs \e[0m" && sleep 1
 
+echo -e "\e[1m\e[32mTo Check log : "sudo journalctl -u availightd -f -o cat" \e[0m"
+echo -e "\e[1m\e[32mTo Stop log : "Ctrl + c" \e[0m" && sleep 1
 sudo journalctl -u availightd -f -o cat
 
 echo "=================================================="
